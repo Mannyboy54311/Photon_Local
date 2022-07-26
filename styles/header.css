@@ -11,6 +11,7 @@
   border-width: 0.5mm;
   align-items: center;
   z-index: 100;
+  flex-direction: row;
 }
 
 .transparent {
@@ -27,6 +28,9 @@
   cursor: pointer;
   width: max-content;
   position: relative;
+  display: flex;
+  margin-top: 5px;
+  flex: 1;
 }
 
 .home-button {
@@ -56,13 +60,14 @@
 }
 
 .contact-us {
-  margin-left: 800px;
+  display: absolute;
+  right: -1165px;
 }
 
 .photon-logo {
   height: 45px;
-  margin-left: 15px;
-  margin-top: 5px;
+  margin-top: -12px;
+  margin-left: 1190px;
 }
 
 .photon-logo:hover {
