@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Home | Photon Racing</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="icon" href="images/favicon.png">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="scroll-header.js"></script>
+    <script type="text/javascript" src="slideshow.js"></script>
+    <link rel="stylesheet" href="styles/slideshow.css">
+
+  </head>
+
+  
+  <body>
+
+    <div class="header">
+
+      
+      <div>
+        <button class="home-button">Home</button>
+      </div>
+      <div>
+        <button class="head-button" onclick="window.location.href='challenge.html'">The Challenge</button>
+      </div>
+      <div>
+        <button class="head-button" onclick="window.location.href='designs.html'">Designs</button>
+      </div>
+      <div>
+        <button class="head-button" onclick="window.location.href='sponsors.html'">Sponsors</button>
+      </div>
+      <div>
+        <button class="head-button" onclick="window.location.href='about-us.html'">About us</button>
+      </div>
+      <div>
+        <button class="contact-us" onclick="window.location.href='contact-us.html'">Contact us</button>
+      </div>
+      <div>
+        <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'"><img class="photon-logo" src="images/photonlogo.png"></button>
+
+      </div>
+
+    </div>
+
+
+    <div class="slideshow-section" style="max-width:1000px">
+      <img class="mySlides" src="images/img1.png" style="width:152%">
+      <img class="mySlides" src="images/img2.png" style="width:152%">
+      <img class="mySlides" src="images/img3.png" style="width:152%">
+    </div>
+
+    <div class="container-home">
+
+      <div class="home-one">
+        <div class="home-one-text">
+          div1
+        </div>
+      </div>
+  
+      <div class="home-two">
+        div2
+      </div>
+
+      <div class="home-three">
+        div3
+      </div>
+
+      <div class="home-four">
+        div4
+      </div>
+
+      <div class="home-five">
+        div5
+      </div>
+
+      <div class="home-six">
+        div6
+      </div>
+
+    </div>
+
+    <div class="footer">
+
+      <div class="social-media-text">
+        Our Social Media
+      </div>
+    
+    <script>
+
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 5000); // Change image every 5 seconds
+      }
+
+    </script>
+
+  </body>
+
+</html>
