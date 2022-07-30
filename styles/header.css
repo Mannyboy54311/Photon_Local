@@ -18,10 +18,11 @@
   align-items: center;
   background-color: none;
   z-index: 50;
+  background-color: rgba(255, 255, 255, 0.46);
 }
 
 .middle-section {
-  background-color: none;
+  background-color: rgba(255, 255, 255, 0.46);
   display: flex;
   max-width: 785px;
   align-items: center;
@@ -31,7 +32,7 @@
 }
 
 .right-section {
-  background-color: none;
+  background-color: rgba(255, 255, 255, 0.46);
   display: flex;
   align-items: center;
   width: 150px;
