@@ -93,7 +93,7 @@
   display: flex;
   max-width: 785px;
   align-items: center;
-  margin-left: 5px;
+  margin-left: 40px;
   margin-right: 15px;
   width: max-content;
   background-color: rgba(255, 255, 255, 0);
@@ -114,7 +114,14 @@
 .placeholder img {
   height: 40px;
   margin-bottom: 2.5px;
-  opacity: 0.9;
+  opacity: 1;
+ 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;
 }
 
 .placeholder{
